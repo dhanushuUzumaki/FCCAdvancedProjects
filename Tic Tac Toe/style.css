@@ -1,0 +1,42 @@
+a,a:hover{
+  text-decoration: none;
+  color: white;
+}
+body{
+  background-color: #424242;
+  color: white;
+}
+.board{
+  position: relative;
+  width: 333px;
+  height: 333px;
+  top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.square{
+  position: relative;
+  border: 1px solid yellow;
+  width: 111px;
+  height: 111px;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top : 30px;
+  cursor: pointer;
+}
+.left{
+  border-left: none;
+  border-right: none;
+}
+.top{
+  border-top: none;
+}
+.bottom{
+    border-bottom: none;
+    border-top: none;
+}
+.right{
+  border-right: none;
+  border-left: none;
+}

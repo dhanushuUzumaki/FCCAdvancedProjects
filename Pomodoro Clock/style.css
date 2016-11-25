@@ -1,0 +1,42 @@
+a,a:hover{
+  text-decoration: none;
+  color: white;
+}
+body{
+  background-color: #424242;
+  color: white;
+}
+#clock{
+  margin: 0 auto;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  font-size: 4em;
+  border: 2px solid #FF8A65;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  overflow: hidden;
+  padding: 60px 20px 60px 20px;
+}
+.content{
+  text-align: center;
+}
+#fill
+{
+content: '';
+position: absolute;
+background: #FF8A65;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: -1;
+}
+.controls span{
+  font-size: 30px;
+  padding: 10px 5px 10px 5px;
+}
+#incrementBreak,#incrementSession,#decrementBreak,#decrementSession{
+  cursor: pointer;
+}

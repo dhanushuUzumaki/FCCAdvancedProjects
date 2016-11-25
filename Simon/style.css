@@ -1,0 +1,161 @@
+a,a:hover{
+  text-decoration: none;
+  color: white;
+}
+body{
+  background-color: #757575;
+  color: white;
+}
+.gameBoard{
+  background-color: #424242;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  top:30px;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  box-shadow: 8px 8px 0 #212121;
+  transform: scale(1,1);
+}
+.gamePoint{
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  left:15px;
+  top: 10px;
+  padding: 5px 5px 5px 5px;
+}
+.gameControls{
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 300px;
+  left:30px;
+  top:-20px;
+  padding: 5px 5px 5px 5px;
+}
+.switchPanel{
+  display: inline-block;
+  position: relative;
+  width: 415px;
+  height: 100px;
+  left: 15px;
+  box-shadow: 8px 8px 2px #212121;
+  padding: 5px 5px 5px 5px;
+}
+.square{
+  display: inline-block;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.red{
+  background-color: #D50000;
+  box-shadow: 3px 3px 3px #212121;
+}
+.blue{
+  background-color: #1A237E;
+  box-shadow: 3px 3px 3px #212121;
+}
+.yellow{
+  background-color: #F57F17;
+  box-shadow: 3px 3px 3px #212121;
+}
+.green{
+  background-color: #1B5E20;
+  box-shadow: 3px 3px 3px #212121;
+}
+.countBox{
+  position: relative;
+  width: 90px;
+  height:150px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  color: red;
+  font-size: 50px;
+  text-align: center;
+}
+.buttons{
+  position: relative;
+  top: 5px;
+  width:80px;
+  height: 70px;
+  left : 5px;
+  padding: 20px 20px 20px 20px;
+}
+.btn-circle {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 20px;
+  font-weight: bold;
+  color: black;
+  box-shadow: 3px 3px 3px #212121;
+  transition: all 0.1s ease;
+}
+.btn-circle:hover{
+  color:black;
+  width: 41px;
+  height: 41px;
+}
+input[type=checkbox]{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 100;
+}
+.fill{
+  height: 90%;
+  width: 50%;
+  position: absolute;
+  float: left;
+  background-color: #BDBDBD;
+  box-shadow: 12px 8px 5px #212121;
+  transform: translateX(0);
+  transition: all 1s ease;
+  z-index: 20;
+}
+input[type=checkbox]:checked ~ div.fill{
+  transform: translateX(95%);
+}
+#status{
+  position: relative;
+  margin: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  top: 10px;
+}
+
+.clicked-red,.red:active{
+  background-color: #F44336;
+}
+.clicked-blue,.blue:active{
+  background-color: #3F51B5;
+}.clicked-yellow,.yellow:active{
+  background-color: #FFEB3B;
+}
+.clicked-green,.green:active{
+  background-color: #4CAF50;
+}
+.strict{
+  background-color: red;
+}
+@media screen and (max-width: 500px){
+  .gameBoard{
+    transform: scale(0.75,0.75);
+    left : -40px;
+    top:0;
+  }
+}

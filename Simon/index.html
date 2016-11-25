@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simon</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div align="center">
+        <h2>Simon</h2>
+        <h6>by <em>Dhanushu Uzuamki</em></h6>
+      </div>
+    </div>
+    <div class = "gameBoard">
+      <div class = "gamePoint">
+        <div class="square red" id="1"></div>
+        <div class="square blue" id="2"></div>
+        <div class="square yellow" id="3"></div>
+        <div class="square green" id="4"></div>
+      </div>
+      <div class = "gameControls">
+        <div class="countBox">
+          <span id="count">00</span>
+          <div>
+            <span style="font-size:20px;color:black;top:-10px">COUNT</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <a href="#" class="btn btn-default btn-circle btn-warning" id="start">start</a><br />
+          <a href="#" class="btn btn-default btn-circle btn-info" id="strict">strict</a>
+        </div>
+      </div>
+      <div class = "switchPanel">
+        <input type="checkbox" />
+        <div class="fill">
+          <div id="status">
+            ON
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src = "app.js"></script>
+  </body>
+</html>
